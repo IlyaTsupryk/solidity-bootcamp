@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <style>
+        .container {
+            height: 500px;
+        }
+    </style>
+
+    <title>LD Token</title>
+</head>
+<body>
+    <div class="container d-flex">
+        <div class="row justify-content-center align-self-center w-100 mx-0">
+
+            <div class="col-9 mb-1">
+                Your LD token balance: <span id="user-balance"></span>
+            </div>
+
+            <div class="col-9 mb-3">
+                Ether balance: <span id="ether-balance"></span>
+            </div>
+
+            <div class="col-5">
+                <input type="text" id="mint-inbox" class="form-control" placeholder="0">
+            </div>
+    
+            <div class="col-4">
+                <button type="button" id="mint-button" class="btn btn-success">Mint to myself</button>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/node_modules/web3/dist/web3.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/truffle-contract@4.0.31/dist/truffle-contract.min.js"></script> -->
+    <script src="app.js"></script>
+</body>
+</html>
